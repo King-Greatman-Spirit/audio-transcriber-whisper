@@ -1,0 +1,18 @@
+# 1. Create project folder
+mkdir audio-transcriber
+cd audio-transcriber
+
+# 2. Create venv
+python -m venv venv
+venv\Scripts\activate   # Windows
+# source venv/bin/activate   # Mac/Linux
+
+# 3. Install requirements
+pip install openai-whisper python-docx ffmpeg-python
+
+# 4. Run transcription
+python audioToText.py sample_audio/audio.mp3
+
+# 5. Output
+#   - transcript.txt (raw text)
+#   - docx/audio.docx (Word file with transcript)
