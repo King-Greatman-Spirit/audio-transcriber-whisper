@@ -27,8 +27,6 @@ audio-transcriber/
 └── sample\_audio/          # Example audio files
 ```
 
-````
-
 ---
 
 ## 🚀 Quick Start
