@@ -8,11 +8,12 @@ venv\Scripts\activate   # Windows
 # source venv/bin/activate   # Mac/Linux
 
 # 3. Install requirements
-pip install openai-whisper python-docx ffmpeg-python
+pip install openai-whisper python-docx ffmpeg-python reportlab
 
 # 4. Run transcription
 python audioToText.py sample_audio/audio.mp3
 
 # 5. Output
-#   - transcript.txt (raw text)
-#   - docx/audio.docx (Word file with transcript)
+#   - audio.txt          (raw text)
+#   - docx/audio.docx    (Word file with transcript)
+#   - docx/audio.pdf     (PDF file with transcript)

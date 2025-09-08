@@ -7,8 +7,7 @@ Convert your long audio recordings into **text, Word (.docx), and PDF** using **
 
 ## ✨ Features
 - ✅ Transcribe audio (MP3, WAV, M4A, etc.) into **text**
-- ✅ Save results as `.txt` and **Word (.docx)**
-- ✅ Easily export Word file to **PDF**
+- ✅ Save results as `.txt`, `.docx`, and `.pdf`
 - ✅ Works offline (no API key required)
 - ✅ Free & unlimited usage with Whisper AI
 
@@ -24,7 +23,7 @@ audio-transcriber/
 ├── note.txt               # Step-by-step guide
 ├── README.md              # Project documentation
 ├── requirements.txt       # Dependencies
-├── docx/                  # Transcribed Word files
+├── docx/                  # Transcribed Word/PDF files
 └── sample\_audio/          # Example audio files
 
 ````
@@ -65,7 +64,54 @@ python audioToText.py sample_audio/audio.mp3
 
 * `audio.txt` → Plain text transcript
 * `docx/audio.docx` → Professional Word document
-* Export to PDF via Word/Google Docs
+* `docx/audio.pdf` → PDF document
+
+---
+
+## 🛠 Installing FFmpeg (Windows Guide)
+
+Whisper **requires FFmpeg** for audio processing. Here’s how to set it up:
+
+### Step 1: Download FFmpeg
+
+1. Go to 👉 [https://www.gyan.dev/ffmpeg/builds/](https://www.gyan.dev/ffmpeg/builds/)
+2. Download **ffmpeg-release-essentials.zip**
+
+### Step 2: Extract FFmpeg
+
+1. Extract the `.zip` into:
+
+   ```
+   C:\ffmpeg
+   ```
+2. You should now have:
+
+   ```
+   C:\ffmpeg\bin\ffmpeg.exe
+   C:\ffmpeg\bin\ffplay.exe
+   C:\ffmpeg\bin\ffprobe.exe
+   ```
+
+### Step 3: Add FFmpeg to PATH
+
+1. Press **Win + R** → type `sysdm.cpl` → Enter
+2. Go to **Advanced tab** → **Environment Variables**
+3. Select `Path` under **System variables** → **Edit** → **New** → Add:
+
+   ```
+   C:\ffmpeg\bin
+   ```
+4. Save & close
+
+### Step 4: Verify Installation
+
+Open a new terminal and run:
+
+```bash
+ffmpeg -version
+```
+
+✅ You should see version details (e.g. `ffmpeg version n6.1`)
 
 ---
 
@@ -76,15 +122,6 @@ python audioToText.py sample_audio/audio.mp3
 * OpenAI Whisper transcription tutorial
 * Transcribe audio to Word & PDF
 * Speech-to-text using Whisper AI
-
----
-
-## 🛠 Requirements
-
-* Python 3.8+
-* FFmpeg
-* OpenAI Whisper
-* python-docx
 
 ---
 
@@ -105,5 +142,3 @@ This project is open-source under the [MIT License](LICENSE).
 Created with ❤️ by [King-Greatman-Spirit](https://github.com/King-Greatman-Spirit)
 
 ```
-
-
