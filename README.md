@@ -1,4 +1,3 @@
-```markdown
 # 🎙️ Audio Transcriber (Whisper AI + Python)
 
 Convert your long audio recordings into **Text, Word (.docx), and PDF** using **OpenAI Whisper**.  
@@ -16,8 +15,7 @@ This tool is **free, offline, and unlimited** – perfect for podcasts, lectures
 ---
 
 ## 📂 Project Structure
-```
-
+```bash
 audio-transcriber/
 │
 ├── audioToText.py         # Main Python script
@@ -27,6 +25,7 @@ audio-transcriber/
 ├── requirements.txt       # Dependencies list
 ├── docx/                  # Transcribed TXT/DOCX/PDF files
 └── sample\_audio/          # Example audio files
+```
 
 ````
 
@@ -170,4 +169,4 @@ This project is open-source under the [MIT License](LICENSE).
 
 Created with ❤️ by [King-Greatman-Spirit](https://github.com/King-Greatman-Spirit)
 
-```
+
